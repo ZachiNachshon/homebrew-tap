@@ -1,4 +1,4 @@
-# ZachiNachshon Homebrew Tap
+# `ZachiNachshon` Homebrew Tap
 
 - [What is Homebrew?](#what-is-homebrew)
    - [What is a Tap?](#what-is-tap)
@@ -27,7 +27,7 @@ See more at https://docs.brew.sh/Taps
 
 Install any package from this Tap directly via the following command:
 
-```sh
+```bash
 brew install ZachiNachshon/tap/<pacakge-name>
 ```
 
@@ -35,7 +35,7 @@ brew install ZachiNachshon/tap/<pacakge-name>
 
 <h4 id="add-tap-to-brew">Add a Tap to local brew</h4>
 
-Tap can be added to a local brew in order to expose its available formulas within it in search results (`brew search` output):
+Tap can be added to a local brew in order to expose its available formulas within it in search results (`brew search <package-name>`):
 
 1. Add the external Tap
 
