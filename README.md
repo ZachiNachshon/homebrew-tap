@@ -1,4 +1,8 @@
-# `ZachiNachshon` Homebrew Tap
+<h3 align="center" id="anchor-logo"><img src="assets/homebrew-256x256.png" height="200"></h3>
+
+<br>
+
+This repository  is a Homebrew Tap for `ZachiNachshon` packages.
 
 - [What is Homebrew?](#what-is-homebrew)
    - [What is a Tap?](#what-is-tap)
@@ -31,6 +35,8 @@ Install any package from this Tap directly via the following command:
 brew install ZachiNachshon/tap/<pacakge-name>
 ```
 
+***Note:** Make sure to always use the fully qualified name i.e. `ZachiNachshon/tap/` prefix when referring to a formula from an external tap.*
+
 <br>
 
 <h4 id="add-tap-to-brew">Add a Tap to local brew</h4>
@@ -46,10 +52,9 @@ Tap can be added to a local brew in order to expose its available formulas withi
 2. Install the package
 
    ```bash
+   # In this case, we don't have to use the fully qualified name because we've tapped previously 
    brew install <package-name>
    ```
-
-   ***Note:** Make sure to always use the fully qualified name i.e. `ZachiNachshon/tap/` prefix when referring to a formula from an external tap.*
 
 <br>
 
