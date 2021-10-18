@@ -6,7 +6,7 @@ This repository  is a Homebrew Tap for `ZachiNachshon` packages.
 
 - [What is Homebrew?](#what-is-homebrew)
    - [What is a Tap?](#what-is-tap)
-- [How to install pacakges from this Tap?](#installing-pacakges)
+- [How to install packages from this Tap?](#installing-pacakges)
    - [Add a Tap to local brew](#add-tap-to-brew)
 - [Available Packages](#available-packages)
 
@@ -27,7 +27,7 @@ See more at https://docs.brew.sh/Taps
 
 <br>
 
-<h2 id="installing-pacakges">🍸 How to install pacakges from this Tap?</h2>
+<h2 id="installing-pacakges">🍸 How to install packages from this Tap?</h2>
 
 Install any package from this Tap directly via the following command:
 
