@@ -5,33 +5,33 @@
 class Anchor < Formula
   desc "Dynamic versioned controlled remote marketplace for local / CI environments"
   homepage "https://ZachiNachshon.github.io/anchor/"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.1.0/anchor_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "23a883a6c1fb9276fcc96edef4439d27c8bca575734adde133d2e8b8c1dfce1e"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.2.0/anchor_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "7c6a6f04f00b84886d8384786eb1204598221165eee9f89fb2636351044dd700"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.1.0/anchor_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "f5c3862fc022c71d6e0c34044a77c2e8371ca69f508267857edd8f82566e2f5b"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.2.0/anchor_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "d77043a7364d76b1bc1447f5e891d2d06cc9d878109908951b64ed89c980fecc"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.1.0/anchor_0.1.0_Linux_armv6.tar.gz"
-      sha256 "46ea509854a328ec474f21c45019e3e5064ed221fe868f228eb88e27b0123ab7"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.2.0/anchor_0.2.0_Linux_armv6.tar.gz"
+      sha256 "0d65a12c3cc5e75b671e74b2bc679d464a1c8d37c9c9218c257ad6162544231d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.1.0/anchor_0.1.0_Linux_arm64.tar.gz"
-      sha256 "41a3e1ae36e3dcf8646f227e63ce78bdef1d3255188c843818f80ccb0a194dda"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.2.0/anchor_0.2.0_Linux_arm64.tar.gz"
+      sha256 "e80559071444687a565ac59162ba95b25e457f9f900f69c30e1a7d8654288267"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.1.0/anchor_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "25965567406862ac8661a5250a92c3636719c88826505f35c91bf0a19b7a5c24"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.2.0/anchor_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "c306e3bd148e4fa55e35ac36fc69de2ada23185c58cef0ae392bc9abfa6b0a70"
     end
   end
 
