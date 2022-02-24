@@ -65,5 +65,6 @@ With the following commands, you can install the latest version of each product:
 | Package Name | Formula | Description |
 | ------------   | ----------  | ------- |
 | [`anchor`](https://github.com/ZachiNachshon/anchor) | `brew install ZachiNachshon/tap/anchor` | Dynamic versioned controlled remote marketplace for local / CI environments |
+| [`git-deps-syncer`](https://github.com/ZachiNachshon/git-deps-syncer) | `brew install ZachiNachshon/tap/git-deps-syncer` | Sync git repositories as external source dependencies |
 
 <br>
