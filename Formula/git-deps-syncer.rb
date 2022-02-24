@@ -10,11 +10,11 @@ class GitDepsSyncer < Formula
   license "MIT"
 
   def install
-    bin.install "git-deps-syncer"
+    bin.install "bin/git-deps-syncer"
   end
 
-  depends_on "git" => :run
-  depends_on "jq" => :run
+  depends_on "git"
+  depends_on "jq"
   depends_on "gh" => :optional
 
   test do
