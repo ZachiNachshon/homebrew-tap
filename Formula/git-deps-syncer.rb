@@ -10,7 +10,8 @@ class GitDepsSyncer < Formula
   license "MIT"
 
   def install
-    bin.install "bin/git-deps-syncer"
+    # move 'git-deps-syncer.sh' under #{prefix}/bin/
+    bin.install "git-deps-syncer.sh"
   end
 
   depends_on "git"
