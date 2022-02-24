@@ -5,8 +5,9 @@ class GitDepsSyncer < Formula
   desc "Sync git repositories as external source dependencies"
   homepage "https://ZachiNachshon.github.io/git-deps-syncer/"
   version "0.1.0"
+  "https://github.com/ZachiNachshon/git-deps-syncer/archive/refs/tags/v0.1.0.zip"
   url "https://github.com/ZachiNachshon/git-deps-syncer/releases/download/v0.1.0/git-deps-syncer.sh"
-  sha256 "aefbcd1f401996bea62b7ef4c3cf165f6eae6dbc0e7adde1afed33818cf40230"
+  sha256 "002c2af1497997e8ef9014ac4af9d6725be6809c38e62379379de5063b0ebdb7"
   license "MIT"
 
   def install
