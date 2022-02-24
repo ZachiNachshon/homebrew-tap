@@ -19,6 +19,6 @@ class GitDepsSyncer < Formula
   depends_on "gh" => :optional
 
   test do
-    system "#{bin}/git-deps-syncer version"
+    system "#{bin}/git-deps-syncer.sh version"
   end
 end
