@@ -11,7 +11,10 @@ class GitDepsSyncer < Formula
 
   def install
     # move 'git-deps-syncer.sh' under #{prefix}/bin/
-    bin.install "git-deps-syncer.sh"
+#     bin.install "git-deps-syncer.sh"
+
+    # move 'git-deps-syncer.sh' to #{prefix}/bin/git-deps-syncer
+    bin.install "git-deps-syncer.sh" => "git-deps-syncer"
   end
 
   depends_on "git"
@@ -19,6 +22,6 @@ class GitDepsSyncer < Formula
   depends_on "gh" => :optional
 
   test do
-    system "#{bin}/git-deps-syncer.sh version"
+    system "#{bin}/git-deps-syncer version"
   end
 end
