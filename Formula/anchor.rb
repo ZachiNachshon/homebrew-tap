@@ -5,21 +5,21 @@
 class Anchor < Formula
   desc "Dynamic versioned controlled remote marketplace for local / CI environments"
   homepage "https://ZachiNachshon.github.io/anchor/"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.9.0/anchor_0.9.0_darwin_arm64.tar.gz"
-      sha256 "dc4fb674cc6d17da60a2bbf0a489bb9e39d0a39bab8bcfa9eba83fbd5cee8251"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.10.0/anchor_0.10.0_darwin_arm64.tar.gz"
+      sha256 "7b1c8ca6f521ec4bf5981d2cfb3f9f847d25d2b2af57045b2b6594233ae0d7c9"
 
       def install
         bin.install "anchor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.9.0/anchor_0.9.0_darwin_amd64.tar.gz"
-      sha256 "189f0ee4ab3a93ffebe206c0514d78c40deaa679405793745cbda3782c5da515"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.10.0/anchor_0.10.0_darwin_amd64.tar.gz"
+      sha256 "ac36c6abc9ff79e878bb1f062032739086ab7473bd74558c4ab69f192b31b8b5"
 
       def install
         bin.install "anchor"
@@ -29,24 +29,24 @@ class Anchor < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.9.0/anchor_0.9.0_linux_armv6.tar.gz"
-      sha256 "2929cb611089b5d5fe506fe4829f4ff972d0386044f0bce12da03d4f016000da"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.10.0/anchor_0.10.0_linux_armv6.tar.gz"
+      sha256 "5c1beb06792bbb6af9545e917759a0d20028e4678801f01e3e36162c87d3db87"
 
       def install
         bin.install "anchor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.9.0/anchor_0.9.0_linux_arm64.tar.gz"
-      sha256 "8a689a2dd75272007a78c966c00c8b73a3d9e095e6832fcdb611fb463e459de6"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.10.0/anchor_0.10.0_linux_arm64.tar.gz"
+      sha256 "53066072405b1d1e9a29ed6f590d66b3de94015c5187b461ad32d895ffc36c68"
 
       def install
         bin.install "anchor"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.9.0/anchor_0.9.0_linux_amd64.tar.gz"
-      sha256 "64ad5f48b501979baa11227098e0c63793a05c8ad76b03523386e96e3fde8b38"
+      url "https://github.com/ZachiNachshon/anchor/releases/download/v0.10.0/anchor_0.10.0_linux_amd64.tar.gz"
+      sha256 "a7b207d8c61d71966919af3f3cb9b9072e8a28957fed68e4eaa566c565ac04a2"
 
       def install
         bin.install "anchor"
