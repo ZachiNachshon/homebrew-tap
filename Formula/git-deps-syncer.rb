@@ -6,7 +6,7 @@ class GitDepsSyncer < Formula
   homepage "https://ZachiNachshon.github.io/git-deps-syncer/"
   version "0.4.0"
   url "https://github.com/ZachiNachshon/git-deps-syncer/releases/download/v0.4.0/git-deps-syncer.sh"
-  sha256 "b695d40a98a3f88ecf117b6e74369added02e5139618167c02d377d8415a2c9a"
+  sha256 "9caa7b0873789bb5e86e1aefb098787d7f9775f719ea2a8f2eee5758c2518d97"
   license "MIT"
 
   def install
