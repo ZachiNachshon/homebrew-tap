@@ -11,7 +11,7 @@ class DotfilesCli < Formula
 
   def install
     # Add the dotfiles script header to RC file (zsh, bashrc, bash_profile)
-    system 'HOMEBREW_INSTALL="True" ./install.sh'
+    bin.install 'HOMEBREW_INSTALL="True" install.sh'
     bin.install_symlink "dotfiles.sh" => "dotfiles"
   end
 
