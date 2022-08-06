@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class DotfilesCLI < Formula
+class DotfilesCli < Formula
   desc "CLI utility for managing a remote dotfiles repository"
   homepage "https://github.com/ZachiNachshon/dotfiles-cli"
   version "0.2.0"
