@@ -6,7 +6,7 @@ class DotfilesCli < Formula
   homepage "https://github.com/ZachiNachshon/dotfiles-cli"
   version "0.2.0"
   url "https://github.com/ZachiNachshon/dotfiles-cli/releases/download/v0.2.0/dotfiles-cli.tar.gz"
-  sha256 "8dfa4afeea0f9b47989d8d533d5cb98c440d65884eb41e15f780c7878a88260c"
+  sha256 "0ce66da6a2aee37e11b2a7cf9292fe0b446195ba0febc7c29da541e4e4cc8ed4"
   license "MIT"
 
   def install
