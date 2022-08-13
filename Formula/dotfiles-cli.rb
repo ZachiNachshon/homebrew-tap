@@ -4,9 +4,9 @@
 class DotfilesCli < Formula
   desc "CLI utility for managing a remote dotfiles repository"
   homepage "https://github.com/ZachiNachshon/dotfiles-cli"
-  version "0.2.0"
-  url "https://github.com/ZachiNachshon/dotfiles-cli/releases/download/v0.2.0/dotfiles-cli.tar.gz"
-  sha256 "0ce66da6a2aee37e11b2a7cf9292fe0b446195ba0febc7c29da541e4e4cc8ed4"
+  version "0.3.0"
+  url "https://github.com/ZachiNachshon/dotfiles-cli/releases/download/v0.3.0/dotfiles-cli.tar.gz"
+  sha256 "a11869e49d4667bb6ab4a58c4bdd98d7a957321210b7513225548e03d454be7d"
   license "MIT"
 
   depends_on "git"
