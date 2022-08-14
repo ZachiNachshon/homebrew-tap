@@ -14,6 +14,7 @@ class DotfilesCli < Formula
   def install
     # Add extracted files to the Homebrew install directory
     libexec.install Dir["*"]
+    libexec.install Dir[".git-deps"]
     # Add a relative symlink from Homebrew libexec to bin folder
     bin.install_symlink libexec/"dotfiles.sh" => "dotfiles"
   end
