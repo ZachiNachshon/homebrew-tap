@@ -4,20 +4,23 @@
 class GitDepsSyncer < Formula
   desc "Sync git repositories as external source dependencies"
   homepage "https://ZachiNachshon.github.io/git-deps-syncer/"
-  version "0.4.0"
-  url "https://github.com/ZachiNachshon/git-deps-syncer/releases/download/v0.4.0/git-deps-syncer.sh"
-  sha256 "9caa7b0873789bb5e86e1aefb098787d7f9775f719ea2a8f2eee5758c2518d97"
+  version "0.5.0"
+  url "https://github.com/ZachiNachshon/git-deps-syncer/releases/download/v0.5.0/git-deps-syncer.tar.gz"
+  sha256 "3482e32ec5ac467788fd4f81832bb4d6782f508bebcf2dcc3896a12a79b2add5"
   license "MIT"
-
-  def install
-    # move 'git-deps-syncer.sh' to #{prefix}/bin/git-deps-syncer
-    bin.install "git-deps-syncer.sh" => "git-deps-syncer"
-  end
 
   depends_on "git"
   depends_on "jq"
   depends_on "gh" => :optional
 
+  def install
+    # Add extracted files to the Homebrew install directory
+    libexec.install Dir["*"]
+    libexec.install Dir[".git-deps"]
+    # Add a relative symlink from Homebrew libexec to bin folder
+    bin.install_symlink libexec/"git-deps-syncer.sh" => "git-deps-syncer"
+  end
+  
   test do
     system "#{bin}/git-deps-syncer version"
   end
